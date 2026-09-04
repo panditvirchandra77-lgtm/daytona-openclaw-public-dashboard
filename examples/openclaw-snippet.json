@@ -1,0 +1,34 @@
+{
+  "_comment": "Just the relevant snippet from openclaw.json. The full file has more keys (model, providers, agents, etc.) — don't replace your whole file with this, just merge the gateway.controlUi.allowedOrigins change.",
+
+  "gateway": {
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+
+        "_comment_2": "↓ Add the 4 scheme variants of your Daytona proxy URL here ↓",
+
+        "wss://18789-wztkrayaqjexo9g1.daytonaproxy01.net",
+        "ws://18789-wztkrayaqjexo9g1.daytonaproxy01.net",
+        "https://18789-wztkrayaqjexo9g1.daytonaproxy01.net",
+        "http://18789-wztkrayaqjexo9g1.daytonaproxy01.net",
+
+        "_comment_3": "Replace the hash above (wztkrayaqjexo9g1) with your actual Daytona proxy hash.",
+
+        "https://*.daytonaproxy01.net",
+
+        "_comment_4": "Wildcard only works for some proxy patterns. Prefer explicit URLs per hash.",
+
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:5174",
+
+        "_comment_5": "The 'null' origin is for local file:// access during development. Remove in prod.",
+
+        "null"
+      ]
+    }
+  }
+}
